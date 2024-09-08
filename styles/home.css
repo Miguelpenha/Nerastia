@@ -1,0 +1,45 @@
+@import url(global.css);
+
+main>.initial {
+    height: 100vh;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+main>.initial>.title {
+    font-size: 7vw;
+    color: #FFFFFF;
+    letter-spacing: 0.15em;
+    font-family: 'Pirata One', system-ui;
+}
+
+main>.initial>.description {
+    opacity: 0;
+    width: 90%;
+    font-size: 2em;
+    color: #FFFFFF;
+    margin-top: 0.5em;
+    text-align: center;
+    transform: translateY(100px);
+    text-shadow: #7A7B7A 2px 2px;
+}
+
+main>.initial>.photo {
+    width: 100%;
+    z-index: -1;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    transform: scale(1.5);
+    filter: brightness(0.5);
+    object-position: 50% 5%;
+}
+
+@media screen and (max-width: 900px) {
+    main>.initial>.title {
+        font-size: 15vw;
+    }
+}

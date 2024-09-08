@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles/form.css">
+        <title>Nerastia</title>
+        <meta name="language" content="pt-BR">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="Nerastia">
+        <meta property="og:description" content="Um mundo de altas aventuras, repletas de magia e diversidade.">
+        <meta property="og:image" content="https://nerastia.vercel.app/img/thumbnail.png">
+        <meta property="og:url" content="https://nerastia.vercel.app">
+        <meta property="og:site_name" content="Nerastia"/>
+        <meta property="fb:admins" content=""/>
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:url" content="https://nerastia.vercel.app">
+        <meta name="twitter:title" content="Nerastia">
+        <meta name="twitter:description" content="Um mundo de altas aventuras, repletas de magia e diversidade.">
+        <meta name="twitter:image" content="https://nerastia.vercel.app/img/thumbnail.png">
+        <meta name="author" content="Miguel da Penha">
+        <meta name="creator" content="Miguel da Penha">
+        <meta name="publisher" content="Miguel da Penha">
+        <meta name="description" content="Um mundo de altas aventuras, repletas de magia e diversidade.">
+        <meta name="copyright" content="© 2024 Nerastia"/>
+        <meta name="keywords" content="">
+        <meta name="rating" content="general"/>
+        <meta name="robots" content="index, follow">
+        <meta name="theme-color" content="#e4e6de">
+        <meta name="msapplication-TileColor" content="#e4e6de">
+        <link rel="canonical" href="https://nerastia.vercel.app" data-baseprotocol="https:" data-basehost="nerastia.vercel.app">
+        <!-- GSAP -->
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Alice&family=Pirata+One&display=swap" rel="stylesheet">
+        <!-- Favicons -->
+        <link rel="shortcut icon" href="https://nerastia.vercel.app/img/favicon.ico" type="image/x-icon">
+    </head>
+    <body>
+        <script>
+            window.document.addEventListener('DOMContentLoaded', () => {
+                gsap.to('header>.options>li', {
+                    x: 0,
+                    opacity: 1,
+                    stagger: 0.2,
+                })
+            })
+        </script>
+        <header>
+            <ul class="options">
+                <li>
+                    <a href="/index.html" class="option">Home</a>
+                </li>
+                <li>
+                    <a href="#quiz" class="option">Quiz de conexão</a>
+                </li>
+                <li>
+                    <a href="#login" class="option">Login</a>
+                </li>
+            </ul>
+        </header>
+        <main>
+            <img src="img/form.jpg" alt="Imagem Ficha">
+        </main>
+    </body>
+</html>
